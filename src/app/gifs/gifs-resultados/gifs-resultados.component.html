@@ -1,5 +1,8 @@
 <hr class="mt-4 text-primary">
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores doloremque, eveniet commodi aut labore
-    blanditiis minima, aliquid cumque quas quis mollitia id. Minima maiores laborum et inventore soluta?
-    Natus, rerum?
-</p>
+<div class="row">
+    <div *ngFor="let resultado of resultados" class="col-md-4">
+        <div class="card">
+            <img [src]="resultado.images.downsized_medium.url" class="card-img-top img-fluid" [alt]="resultado.tittle">  
+        </div>
+    </div>
+</div>
