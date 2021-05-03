@@ -2,5 +2,5 @@
     <a href="#" class="list-group-item list-group-item-action active">
         Home
     </a>
-    <a *ngFor="let gifs of historial" href="#" class="list-group-item list-group-item-action">{{ gifs | titlecase}}</a>
+    <a *ngFor="let gifs of historial" (click)="buscar(gifs)" href="#" class="list-group-item list-group-item-action">{{ gifs | titlecase}}</a>
 </div>
